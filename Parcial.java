@@ -1,7 +1,7 @@
 /*
 * <UNIME>
 * <BSI>
-* <PROGAMAÇÃO ORIENTADA A OBJETO 2>
+* <PROGAMAÃ‡ÃƒO ORIENTADA A OBJETO 2>
 * <PABLO ROXO>
 * <LUIS RICARDO SOUSA BORGES>
 */
@@ -17,23 +17,26 @@ public class Parcial {
 		double nota1, nota2, nota3, resultado;
 		Scanner teclado = new Scanner(System.in);
 		
-		System.out.println("Digite a 1° nota: ");
+		System.out.println("Digite a 1Â° nota: ");
 		nota1 =  teclado.nextDouble();
 		
-		System.out.println("Digite a 2° nota: ");
+		System.out.println("Digite a 2Â° nota: ");
 		nota2 =  teclado.nextDouble();
 		
-		System.out.println("Digite a 3° nota: ");
+		System.out.println("Digite a 3Â° nota: ");
 		nota3 =  teclado.nextDouble();
 		
-		System.out.println("A nota final é: ");
+		System.out.println("A nota final Ã©: ");
 		System.out.println(resultado = ((nota1 + nota2 + nota3) / 3));
 		
 		if (resultado >= 7) {
-			System.out.println("Você esta aprovado");
+			System.out.println("VocÃª esta aprovado");
 		}
-		 else if (resultado <= 4) {
-				System.out.println("Você esta reprovado");
+		 else if (resultado == 4) {
+				System.out.println("VocÃª esta na recuperaÃ§Ã£o");
+		 }
+		 else if (resultado <= 3) {
+				System.out.println("VocÃª esta reprovado");
 		 }
 		
 	}
